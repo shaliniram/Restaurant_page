@@ -1,10 +1,16 @@
- function component() {
-   const element = document.createElement('div');
+import './style.css';
+import { content, pageload,menuload } from "./pageLoad.js";
 
-  // Lodash, now imported by this script
-   element.innerHTML = 'Hello';
+const menubtn = document.querySelector(".menu")
+const logo = document.querySelector(".logo")
 
-   return element;
- }
+// Creating logo
+// var img = document.createElement('img');
 
- document.body.appendChild(component());
+// img.setAttribute('src', 'logo.png');
+// logo.appendChild(img);
+
+ document.addEventListener('DOMContentLoaded',pageload);
+
+
+ menubtn.addEventListener('click',menuload);

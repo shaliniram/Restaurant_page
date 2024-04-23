@@ -1,0 +1,93 @@
+body{
+  margin:0;
+  padding:0;
+  background-color: black;
+    position: relative;
+}
+
+body::before{
+    content: '';
+    background-image: url(bg_rest2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 0.6;       
+    position: absolute; 
+    inset: 0;
+    z-index: -1;
+   
+     /* Black with 60% opacity */ 
+    position: fixed;
+    
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+  padding:30px;}
+
+    
+nav button{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;   
+    font-style: normal;
+}
+
+
+#content{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.home-div{
+    margin: 0 auto;
+    width: 50%;
+    background-color:rgba(255, 255, 255, 0.8); 
+    text-align: center  ;    
+    padding: 40px;
+    margin-top: 4rem;  
+}
+
+
+.home-div h1{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;   
+    font-style: normal;
+    font-size: 4rem;
+    color: rgb(93,50,2);
+}
+
+.home-div h2{
+
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(155,146,73)
+}
+
+
+
+.home-div p{
+    /* font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+     */
+     font-family: "Dancing Script", cursive;
+     font-optical-sizing: auto;
+     font-style: normal;
+    font-size: 2rem;
+  
+    
+  }
+  
